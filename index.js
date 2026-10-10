@@ -73,7 +73,7 @@ app.use(
       "https://www.stacksl.com",
       "https://stacksapp.pages.dev",
       "http://localhost:5173",
-      "https://stacksl.onrender.com",
+      "https://dept-commerce.com",
       "https://stacks-48in.onrender.com",
     ],
     credentials: true,
