@@ -67,16 +67,8 @@ app.get("/health", require("./src/health"));
 // =======================================
 app.use(
   cors({
-    origin: [
-      "https://amiina19960-droid.github.io",
-      "https://stacksl.com",
-      "https://www.stacksl.com",
-      "https://stacksapp.pages.dev",
-      "http://localhost:5173",
-      "https://dept-commerce.com",
-      "https://stacks-48in.onrender.com",
-    ],
-    credentials: true,
+    origin: "*", // Allow all origins
+    credentials: false, // Required when using "*"
     allowedHeaders: [
       "Content-Type",
       "Authorization",
@@ -123,7 +115,7 @@ app.use(
 
 // =======================================
 // 📁 Serve Static Admin Panel
-// =======================================
+// ======================================= 
 app.use(
   "/admin-panel",
   express.static(path.join(__dirname, "public", "admin-panel"))
